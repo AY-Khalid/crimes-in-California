@@ -1,4 +1,7 @@
 #import the required libraries
+!pip install collections
+!pip install wordcloud
+!pip install dash
 
 from collections import Counter
 from wordcloud import WordCloud, STOPWORDS
