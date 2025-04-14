@@ -4,7 +4,6 @@ numpy
 plotly
 datetime
 dash
-io
 base64
 re
 PIL
