@@ -1,3 +1,19 @@
+# Import the required libraries
+from collections import Counter
+from wordcloud import WordCloud, STOPWORDS
+import pandas as pd 
+import numpy as np 
+import plotly.express as px
+import datetime as dt 
+import dash
+from dash import dcc, html, Input, Output
+from io import BytesIO
+import base64
+import re
+from PIL import Image
+import matplotlib.pyplot as plt
+import random
+
 #import the datasets
 df = pd.read_csv('https://raw.githubusercontent.com/AY-Khalid/crimes-in-California/refs/heads/main/word_data.csv')  # Your dataset with columns: word, frequency, year
 
