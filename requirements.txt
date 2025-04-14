@@ -4,7 +4,6 @@ numpy
 plotly
 datetime
 dash
-re
 PIL
 matplotlib
 random
