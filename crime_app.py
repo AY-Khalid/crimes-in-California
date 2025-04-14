@@ -78,7 +78,7 @@ app.layout = html.Div([
     html.Div([
         html.Img(id='wordcloud-img')
     ], style={'textAlign': 'center'})
-])
+], style={"textAlign":"center", "display":"inline-block"})
 
 # Callback to update word cloud based on year
 @app.callback(
