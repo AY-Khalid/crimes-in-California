@@ -38,7 +38,7 @@ word_stop.update("simple", "petty", "all", "attempt", "older")
 
 # map of califonia 
 image = Image.open("califonia.png").convert("L") 
-# image = image.resize((800, 800))  
+image = image.resize((100, 100))  
 mask = np.array(image)
 mask = np.where(mask > 128, 255, 0).astype(np.uint8) 
 
@@ -63,7 +63,7 @@ def custom_color_func(word, font_size, position, orientation, random_state=None,
 
 # Layout
 app.layout = html.Div([
-    html.H1("Interactive wc (crimes by year)", style={'textAlign': 'center'}),
+    # html.H1("Interactive wc (crimes by year)", style={'textAlign': 'center'}),
     
     html.Div([
         dcc.Dropdown(
