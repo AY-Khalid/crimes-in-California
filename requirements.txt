@@ -6,5 +6,4 @@ datetime
 dash
 Pillow
 matplotlib
-random
 
