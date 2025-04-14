@@ -1,19 +1,14 @@
-#import the required libraries
-!pip install collections
-!pip install wordcloud
-!pip install dash
+collections
+wordcloud
+pandas
+numpy
+plotly
+datetime
+dash
+io
+base64
+re
+PIL
+matplotlib
+random
 
-from collections import Counter
-from wordcloud import WordCloud, STOPWORDS
-import pandas as pd 
-import numpy as np 
-import plotly.express as px
-import datetime as dt 
-import dash
-from dash import dcc, html, Input, Output
-from io import BytesIO
-import base64
-import re
-from PIL import Image
-import matplotlib.pyplot as plt
-import random
