@@ -63,7 +63,7 @@ def custom_color_func(word, font_size, position, orientation, random_state=None,
 
 # Layout
 app.layout = html.Div([
-    # html.H1("Interactive wc (crimes by year)", style={'textAlign': 'center'}),
+    html.H2("Crimes in California", style={'textAlign': 'center'}),
     
     html.Div([
         dcc.Dropdown(
@@ -78,7 +78,7 @@ app.layout = html.Div([
     html.Div([
         html.Img(id='wordcloud-img')
     ], style={'textAlign': 'center'})
-], style={"textAlign":"center", "display":"inline-block", "margin":"0 auto"})
+])
 
 # Callback to update word cloud based on year
 @app.callback(
