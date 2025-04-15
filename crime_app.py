@@ -51,15 +51,15 @@ server = app.server  # For deployment
 years = sorted(df['year'].unique())
 
 # using custom colors 
-def custom_color_func(word, font_size, position, orientation, random_state=None, **kwargs):
-    colors = [
-        "#800080",  # purple
-        "#00008B",  # dark blue
-        "#000000",  # black
-        "#8A2BE2",  # blue purple (blueviolet)
-        "#FF69B4"   # pink (hotpink)
-    ]
-    return random.choice(colors)
+# def custom_color_func(word, font_size, position, orientation, random_state=None, **kwargs):
+#     colors = [
+#         "#800080",  # purple
+#         "#00008B",  # dark blue
+#         "#000000",  # black
+#         "#8A2BE2",  # blue purple (blueviolet)
+#         "#FF69B4"   # pink (hotpink)
+#     ]
+#     return random.choice(colors)
 
 # Layout
 app.layout = html.Div([
@@ -77,8 +77,8 @@ app.layout = html.Div([
     
     html.Div([
         html.Img(id='wordcloud-img')
-    ], style={'textAlign': 'center', 'backgroundColor': 'darkgrey'})
-])
+    ], style={'textAlign': 'center', 'backgroundColor': '#F1F3F7'})
+], style={'backgroundColor': '#F1F3F7'})
 
 # Callback to update word cloud based on year
 @app.callback(
@@ -95,11 +95,11 @@ def update_wordcloud(selected_year):
     wc = WordCloud(
         width=800,
         height=400,
-        background_color='darkgrey',
+        background_color='white',
         mask=mask,
-        contour_color='darkgrey',
+        contour_color='white',
         contour_width=1, 
-        color_func=custom_color_func # color function defined above
+        # color_func=custom_color_func # color function defined above
     ).generate_from_frequencies(freq_dict)
     
     # Convert image to base64
