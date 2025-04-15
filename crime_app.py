@@ -95,9 +95,9 @@ def update_wordcloud(selected_year):
     wc = WordCloud(
         width=800,
         height=400,
-        background_color='white',
+        background_color='darkgrey',
         mask=mask,
-        contour_color='white',
+        contour_color='darkgrey',
         contour_width=1, 
         color_func=custom_color_func # color function defined above
     ).generate_from_frequencies(freq_dict)
