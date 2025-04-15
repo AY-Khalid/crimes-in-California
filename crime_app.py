@@ -38,7 +38,7 @@ word_stop.update("simple", "petty", "all", "attempt", "older")
 
 # map of califonia 
 image = Image.open("califonia.png").convert("L") 
-image = image.resize((400, 400))  
+image = image.resize((800, 800))  
 mask = np.array(image)
 mask = np.where(mask > 128, 255, 0).astype(np.uint8) 
 
